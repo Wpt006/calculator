@@ -1,5 +1,6 @@
+
 # About
-This calculator is written in python that does addition, subtraction, division and multiplication. 
+This calculator is written in python and can perform arithmetic operations such as addition, subtraction, multiplication, and division.
 
 # Example Usage
 
@@ -13,3 +14,7 @@ Select your calculator operations:
 
 
 
+# Files
+main.py - main file <br>
+calculator.py - hosting code for the operations<br>
+test_calculator.py - test file of calculator.py<br>
