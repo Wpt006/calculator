@@ -24,6 +24,7 @@ def test_divide_negative():
     assert multiply(-10,-2) == 20
     assert divide(-10,-2) == 5
     assert divide(-10,2) == -5
+    assert divide(10,-2) == -5
 
 # handles division by a floating-point number
 def test_divide_float():
