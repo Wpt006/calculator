@@ -33,7 +33,7 @@ jobs:
       env:
         TOKEN: ${{ secrets.GITHUB_TOKEN }} #secrets.repo_token
       run: |
-        curl -H "Authorization: token ${TOKEN}" https://raw.githubusercontent.com/sandytangps/calculator/main/test_calculator_new.py -o test_activity3Sandy.py
+        curl -H "Authorization: token ${TOKEN}" https://raw.githubusercontent.com/HJ1174/python-calculator/main/test_calculator.py -o test_activity3HJ.py
 
     - name: List Content from Repo
       run: |
