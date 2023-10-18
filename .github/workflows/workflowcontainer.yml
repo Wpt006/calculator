@@ -24,9 +24,9 @@ jobs:
         repository: Wpt006/calculator
     
     # - name: Get TestScript from Remote Repository
-    # #  env:
-    # #    TOKEN: ${{ secrets.GITHUB_TOKEN }} #secrets.repo_token
-    #   run: |
+    # # env:
+    # #   TOKEN: ${{ secrets.GITHUB_TOKEN }} #secrets.repo_token
+    #  run: |
     #     curl -H "Authorization: token ${TOKEN}" https://github.com/Wpt006/calculator/blob/main/test_calculator.py -o test_activity3.py
   
     - name: Get TestScript from Remote Repository
