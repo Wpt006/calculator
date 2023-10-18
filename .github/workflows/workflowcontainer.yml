@@ -23,7 +23,7 @@ jobs:
       with:
         repository: Wpt006/calculator
     
-    #  - name: Get TestScript from Remote Repository
+    # - name: Get TestScript from Remote Repository
     # #  env:
     # #    TOKEN: ${{ secrets.GITHUB_TOKEN }} #secrets.repo_token
     #   run: |
