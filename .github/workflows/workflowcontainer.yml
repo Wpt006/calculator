@@ -30,8 +30,8 @@ jobs:
     #     curl -H "Authorization: token ${TOKEN}" https://github.com/Wpt006/calculator/blob/main/test_calculator.py -o test_activity3.py
   
     - name: Get TestScript from Remote Repository
-      env:
-        TOKEN: ${{ secrets.GITHUB_TOKEN }} #secrets.repo_token
+  #    env:
+   #     TOKEN: ${{ secrets.GITHUB_TOKEN }} #secrets.repo_token
       run: |
         wget -H "Authorization: token ${TOKEN}" https://github.com/HJ1174/python-calculator/blob/main/test_calculator.py -O test_activity3HJ.py
 
