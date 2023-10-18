@@ -33,16 +33,17 @@ jobs:
       env:
         TOKEN: ${{ secrets.GITHUB_TOKEN }} #secrets.repo_token
       run: |
-        curl -H "Authorization: token ${TOKEN}" https://raw.githubusercontent.com/HJ1174/python-calculator/main/test_calculator.py -o test_activity3HJ.py
+        wget -H "Authorization: token ${TOKEN}" https://raw.githubusercontent.com/HJ1174/python-calculator/main/test_calculator.py -O test_activity3HJ.py
 
     - name: List Content from Repo
       run: |
         pwd
         ls
+#remember to update file name
 
     - name: Start pytest Testing
       run: |
-        pytest test_activity3Sandy.py -v -cov --junitxml=report.xml
+        pytest test_activity3HJ.py -v -cov --junitxml=report.xml
 
     - if: ${{ failure() }}
       name: Create Issue on Failed workflow
