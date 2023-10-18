@@ -33,7 +33,7 @@ jobs:
   #    env:
    #     TOKEN: ${{ secrets.GITHUB_TOKEN }} #secrets.repo_token
       run: |
-        wget https://github.com/HJ1174/python-calculator/blob/main/test_calculator.py -O test_activity3HJ.py
+        wget https://raw.githubusercontent.com/HJ1174/python-calculator/main/test_calculator.py -O test_activity3HJ.py
 
     - name: List Content from Repo
       run: |
