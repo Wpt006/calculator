@@ -16,7 +16,7 @@ jobs:
 
     - name: Install Libraries
       run: |
-        pip install flake8 pytest pytest-cov robotframework
+        pip install pytest
 
     - name: Checkout Own Repo
       uses: actions/checkout@v2
@@ -27,7 +27,7 @@ jobs:
     #  env:
     #    TOKEN: ${{ secrets.GITHUB_TOKEN }} #secrets.repo_token
       run: |
-        curl -H "Authorization: token ${TOKEN}" https://github.com/Wpt006/calculator/blob/main/test_calculator.py -o activity3.py
+        curl -H "Authorization: token ${TOKEN}" https://github.com/Wpt006/calculator/blob/main/test_calculator.py -o test_activity3.py
     
     - name: List Content from Repo
       run: |
@@ -64,3 +64,5 @@ jobs:
       if: always()
       with:
         junit_files: "report.xml"
+
+    
