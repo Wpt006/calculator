@@ -11,7 +11,7 @@ def divide(num1, num2):
   try:
     return (num1 / num2)
   except ZeroDivisionError:
-    return "Cannot divide by 0"
+    return "Cannot divide by zero"
 
 def get_num(text):
     try:
